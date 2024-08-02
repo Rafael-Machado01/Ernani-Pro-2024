@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    text-decoration: none;
+  }
+.container {
+    color: #f7eeee;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly; 
+    text-align: center;
+    background-color: #00000080;
+}
+.title {
+    font-size: calc(10px + 3vw);
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.countdown {
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.countdown h1 {
+    font-size: calc(10px + 8vw);
+    text-shadow: 0 0 2.5px #f7eeee;
+}
+.links a  {
+    display: inline;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 10px 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #1b1929;
+    background: #f7eeee;
+    border-radius: 22px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+a:hover {
+    background: #fff;
+    color: #000;
+    text-shadow: 0 0 4.5px #f7eeee;
+}
+@media (max-width: 500px) {
+    .links a {
+        display: grid;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+#icon {
+    background: none;
+    color: #fff;
+    font-size: 3rem;
+}
+
+#icon:hover {
+    font-size: 3.5rem;
+}
+
+@media (max-width: 350px) {
+    .countdown h1 {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}

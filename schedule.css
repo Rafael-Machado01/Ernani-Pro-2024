@@ -1,0 +1,298 @@
+
+#guide {
+    color: #15151e
+}
+#guide .sectionTitle {
+    font-size: 26px;
+    margin-bottom: 3.4px;
+}
+#guide .sectionSubtitle {
+    font-size: 20px;
+    margin-top: 0.5px;
+}
+
+#guide .days {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1.0 rem;
+    width: 100%;
+}
+
+#guide .days .day {
+    cursor: pointer;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    border-bottom: 2px solid #e8e8e9;
+    color: #b9b9bc;
+}
+
+/* COR DA FEIRA */
+#guide .days .day.active {
+    color: #e10600;
+    border-bottom: 6px solid #e10600
+}
+
+#guide .days .day>* {
+    pointer-events: none
+}
+
+#guide .days p {
+    margin-bottom: .4rem
+}
+
+#guide .details {
+    padding: 1.5rem 0;
+    border-bottom: 2px solid #e8e8e9;
+    width: 100%
+}
+
+#guide .details div {
+    display: none
+}
+
+#guide .details div.active {
+    display: block
+}
+
+#guide .details strong {
+    margin-right: .5rem
+}
+
+#guide .item {
+    position: relative;
+}
+
+#guide .item::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .55)
+}
+
+#guide #toArrive {
+    padding: 2.5rem 0 0
+}
+
+#guide #toArrive .line {
+    display: block
+}
+
+#guide #toArrive .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .59);
+    color: #fff;
+    margin-bottom: 1rem
+}
+
+#guide #toArrive .item .content {
+    position: absolute;
+    z-index: 2;
+    width: 100%
+}
+
+#guide #toArrive .item .inner {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#guide #toArrive {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center
+}
+
+#guide #toArrive{
+    height: 2.75rem
+}
+
+#guide #toArrive {
+    margin-top: 1.5rem
+}
+
+#guide #toArrive p {
+    white-space: pre-line;
+    text-align: left;
+    line-height: 1.25;
+    margin-bottom: 0
+}
+
+#guide #toArrive {
+    margin-top: .75rem;
+    margin-bottom: 0
+}
+
+#guide #toArrive {
+    padding: .3rem 1.25rem
+}
+
+#guide #toArrive {
+    margin-left: -10px;
+    margin-bottom: 0
+}
+
+#guide {
+    display: block;
+    width: 100%;
+    height: 40vh
+}
+
+#guide  {
+    padding: 1.5rem 0 0
+}
+
+#guide  {
+    min-width: 100%
+}
+
+@media only screen and (max-width:330px) {
+    #guide  {
+        white-space: normal
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .sectionSubtitle {
+        font-size: 2.2rem
+    }
+
+    .sectionTitle {
+        font-size: 2.75rem
+    }
+
+    .contentText {
+        font-size: 1.65rem
+    }
+
+    #guide {
+        padding: 3.5rem 0 2rem
+    }
+
+    #guide.page {
+        padding: 0 0 3rem
+    }
+
+    #guide .details {
+        margin-bottom: 1.5rem
+    }
+
+    #guide #toArrive .sectionSubtitle {
+        margin: 2rem 0
+    }
+
+    #guide #toArrive .line {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between
+    }
+
+    #guide #toArrive  {
+        width: 32%;
+        position: relative
+    }
+
+    #guide #toArrive {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    #guide #toArrive .item .inner img {
+        height: 4rem
+    }
+
+    #guide #toArrive .item .address {
+        margin-left: 0
+    }
+
+    #guide #toArrive .item p {
+        text-align: center;
+        font-size: 1.5rem;
+        white-space: normal;
+        padding: 0 1rem
+    }
+
+    #guide #toArrive .item h5 {
+        margin-bottom: .75rem;
+        font-size: 1.5rem
+    }
+
+    #guide #toArrive iframe {
+        height: 25rem;
+        margin-top: 1rem
+    }
+
+    #guide #toArrive .map {
+        margin-top: 1.5rem
+    }
+
+    #guide  {
+        padding-bottom: 2rem
+    }
+
+    #guide  .container {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    #guide {
+        min-width: 100%
+    }
+}
+
+@media only screen and (max-width:1400px) and (min-width:1200px) {
+    html {
+        font-size: 14px
+    }
+}
+
+@media only screen and (max-width:1199px) and (min-width:1120px) {
+    html {
+        font-size: 13px
+    }
+}
+
+@media only screen and (max-width:1120px) and (min-width:1000px) {
+    html {
+        font-size: 12px
+    }
+}
+
+@media only screen and (max-width:999px) and (min-width:768px) {
+    html {
+        font-size: 9px
+    }
+}
+#guide .details div.contentText {
+    display: block
+}
+
+.details .contextText p:last-child {
+    margin-bottom: 0
+}
